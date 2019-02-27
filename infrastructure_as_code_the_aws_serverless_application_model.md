@@ -1,0 +1,7 @@
+#### 架构及代码 - AWS服务器应用模型（AWS SAM）
+
+在管理基础设施的创建和修改的可审核性、自动化和可重复性方面，将基础设施表示为代码会带来很多好处。即使在构建无服务器应用时你不需要管理任何基础设施，但许多组件在架构中扮演了一个角色:IAM角色、Lambda函数及其配置、事件源和其他依赖项。在AWS CloudFormation中原生表示所有这些内容需要大量的JSON或YAML。从一个无服务器应用到下一个无服务器应用，大部分内容几乎相同。
+
+AWS无服务器应用模型(AWS SAM)使你能够在构建无服务器应用时获得更简单的体验，并获得架构及代码的好处。[AWS SAM](https://github.com/awslabs/serverless-application-model)是AWS CloudFormation之上的开放规范抽象层。它提供了一组命令行工具，使你能够使用几行JSON或YAML定义完整的无服务器应用堆栈，将Lambda函数代码与其基础设施定义打包在一起，然后将它们一起部署到AWS。我们建议使用AWS SAM与AWS CloudFormation相结合来定义和更改无服务器应用环境。
+
+但是，在基础设施/环境级别发生的更改与现有Lambda函数中发生的应用代码更改之间存在区别。为Lambda函数代码而构建的部署流水线，AWS CloudFormation和AWS SAM并不是其所需的唯一工具。有关管理Lambda函数的代码更改的更多建议，请参阅本白皮书的CI/CD部分。

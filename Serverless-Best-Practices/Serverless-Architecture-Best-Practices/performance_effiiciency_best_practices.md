@@ -10,7 +10,7 @@ Lambda提供一个单刻度盘来调高或调低函数可用的计算资源的�
 
 下面的图显示了如何将理想内存分配给示例函数，以实现更低成本和延迟。通过分配更多资源，在函数中减少的延迟量超过了使用512MB而不是较低内存选项的每100ms的额外计算成本。但是在512 MB之后，这个特定函数逻辑的性能提升会变弱，因此现在每100ms的额外成本会使总成本更高。这使得512MB成为最小化总成本的最佳选择。
 
-![4](images/Figure4.jpg)
+![4](../../images/Figure4.jpg)
 图4: 选择Lambda函数最佳内存大小
 
 函数的内存使用由每次调用决定，可以在[CloudWatch日志](http://docs.aws.amazon.com/AmazonCloudWatch/latest/monitoring/WhatIsCloudWatchLogs.html)中查看。
@@ -43,7 +43,7 @@ Lambda函数的大部分性能取决于需要执行的逻辑及其依赖关系�
 
 为了了解应用架构的各个组件(可能包括一个或多个Lambda函数)，我们建议您使用[AWS X-Ray](https://aws.amazon.com/xray/)。X-Ray允许你通过每个组件部分跟踪应用请求的完整生命周期，分别显示每个组件的延迟和其他指标，如下图所示。
 
-![5](images/Figure5.jpg)
+![5](../../images/Figure5.jpg)
 图5: AWS X-Ray可视化服务地图
 
 要了解更多关于X-Ray的信息，请参阅[本文档](https://docs.aws.amazon.com/lambda/latest/dg/lambda-x-ray.html)。

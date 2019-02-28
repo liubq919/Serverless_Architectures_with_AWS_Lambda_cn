@@ -1,4 +1,4 @@
-# 基于AWS Lambda的无服务器架构(概述与最佳实践)
+# AWS Lambda无服务器架构(概述与最佳实践)
 
 ## 目录
 - [介绍 - 什么是无服务器？](introduction.md)

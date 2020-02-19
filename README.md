@@ -1,5 +1,13 @@
 # AWS Lambda无服务器架构(概述与最佳实践)
 
+<p align="center">
+   <img width="400" src="images/cover.png">
+</p>
+
+## 原文
+- [pdf](serverless-architectures-with-aws-lambda.pdf)  
+- [word](serverless-architectures-with-aws-lambda.doc)
+
 ## 目录
 - [介绍 - 什么是无服务器？](introduction.md)
 - [AWS Lambda — 基本概念](aws_lambda-the_basic.md)
